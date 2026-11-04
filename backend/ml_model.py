@@ -1,5 +1,5 @@
 import pandas as pd
-
+from pathlib import Path
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_absolute_error, r2_score
@@ -8,9 +8,10 @@ from sklearn.metrics import mean_absolute_error, r2_score
 # ==============================
 # Load Dataset
 # ==============================
+BASE_DIR = Path(__file__).resolve().parent
 
 data = pd.read_csv(
-    "database/student-mat.csv",
+    BASE_DIR / "database" /"student-mat.csv",
     sep=";"
 )
 
