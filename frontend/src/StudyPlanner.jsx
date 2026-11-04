@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./StudyPlanner.css";
+import API_URL from "./api";
 
 function StudyPlanner() {
   const [subject, setSubject] = useState("");
