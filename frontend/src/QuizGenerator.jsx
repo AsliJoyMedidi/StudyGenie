@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./QuizGenerator.css";
+import API_URL from "./api";
 
 function QuizGenerator() {
   const [subject, setSubject] = useState("");

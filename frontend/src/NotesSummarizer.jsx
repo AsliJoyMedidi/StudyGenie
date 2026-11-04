@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./NotesSummarizer.css";
+import API_URL from "./api";
 
 function NotesSummarizer() {
   const [notes, setNotes] = useState("");

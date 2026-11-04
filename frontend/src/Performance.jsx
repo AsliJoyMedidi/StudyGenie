@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./Performance.css";
+import API_URL from "./api";
 
 function Performance() {
   const [studytime, setStudytime] = useState("");
