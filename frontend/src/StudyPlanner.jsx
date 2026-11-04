@@ -18,7 +18,7 @@ function StudyPlanner() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/study-plan",
+        '${API_URL}/study-plan',
         {
           subject: subject,
           exam_date: examDate,

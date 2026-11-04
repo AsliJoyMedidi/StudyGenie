@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./Login.css";
+import API_URL from "./api";
 
 function Login() {
   const [isRegister, setIsRegister] = useState(false);
@@ -15,7 +16,7 @@ function Login() {
     try {
       if (isRegister) {
         const response = await axios.post(
-          "http://127.0.0.1:8000/register",
+          `${API_URL}/register`,
           {
             name: name,
             email: email,
@@ -33,7 +34,7 @@ function Login() {
         }
       } else {
         const response = await axios.post(
-          "http://127.0.0.1:8000/login",
+          `${API_URL}/login`,
           {
             email: email,
             password: password,

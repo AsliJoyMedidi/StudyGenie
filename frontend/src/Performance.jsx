@@ -20,7 +20,7 @@ function Performance() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/predict-performance",
+        '${API_URL}/predict-performance',
         {
           studytime: Number(studytime),
           failures: Number(failures),

@@ -23,7 +23,7 @@ function QuizGenerator() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/quiz",
+        '${API_URL}/quiz',
         {
           subject: subject,
           topic: topic,

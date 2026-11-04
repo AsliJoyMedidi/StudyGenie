@@ -20,7 +20,7 @@ function NotesSummarizer() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/summarize",
+        '${API_URL}/summarize',
         {
           notes: notes,
         }
