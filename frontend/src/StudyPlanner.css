@@ -1,0 +1,195 @@
+.planner-page {
+  min-height: 100vh;
+  background: #f5f7fb;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+.planner-header {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.planner-logo {
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.back-btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.planner-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.planner-intro {
+  background: #4f46e5;
+  color: white;
+  padding: 35px;
+  border-radius: 20px;
+  margin-bottom: 25px;
+}
+
+.planner-intro h1 {
+  font-size: 35px;
+  margin: 10px 0;
+}
+
+.planner-intro p {
+  line-height: 1.6;
+}
+
+.planner-layout {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 25px;
+}
+
+.planner-form-card,
+.planner-info-card {
+  background: white;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.generate-btn {
+  width: 100%;
+  padding: 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.generate-btn:hover {
+  background: #3730a3;
+}
+
+.info-item {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.info-item span {
+  background: #eef2ff;
+  color: #4f46e5;
+  padding: 10px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.info-item h3 {
+  margin: 0 0 5px;
+}
+
+.info-item p {
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+.plan-result {
+  background: white;
+  margin-top: 25px;
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.study-plan-content {
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.study-plan-content pre {
+  white-space: pre-wrap;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.success-badge {
+  background: #dcfce7;
+  color: #15803d;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .planner-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-page {
+    padding: 20px;
+  }
+}
+.planner-intro p:first-child {
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+
+.planner-form-card h2,
+.planner-info-card h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.generate-btn:hover {
+  transform: translateY(-1px);
+}
+
+.plan-result h2 {
+  margin-top: 0;
+}
