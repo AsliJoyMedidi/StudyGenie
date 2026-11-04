@@ -20,7 +20,7 @@ function NotesSummarizer() {
 
     try {
       const response = await axios.post(
-        '${API_URL}/summarize',
+        `${API_URL}/summarize`,
         {
           notes: notes,
         }

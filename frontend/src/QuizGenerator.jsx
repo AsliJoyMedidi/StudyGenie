@@ -23,7 +23,7 @@ function QuizGenerator() {
 
     try {
       const response = await axios.post(
-        '${API_URL}/quiz',
+        `${API_URL}/quiz`,
         {
           subject: subject,
           topic: topic,

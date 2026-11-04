@@ -18,7 +18,7 @@ function StudyPlanner() {
 
     try {
       const response = await axios.post(
-        '${API_URL}/study-plan',
+        `${API_URL}/study-plan`,
         {
           subject: subject,
           exam_date: examDate,
